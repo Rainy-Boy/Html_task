@@ -17,7 +17,7 @@
       </div>
 
       <div class="row ">
-        <div class="col-8 px-0 text-start">
+        <div class="col-8 px-0 text-start" id="first">
           <h2 class="d-flex justify-content-start mt-5">What is JavaScript?</h2>
           <hr>
           <p class="fw-light fs-5">
@@ -44,7 +44,7 @@
             <li>Open and cross-platform.</li>
           </ul>
 
-          <h2 class="d-flex justify-content-start mt-5">Client-Side JavaScript</h2>
+          <h2 class="d-flex justify-content-start mt-5" id="second">Client-Side JavaScript</h2>
           <hr>
           <p>Client-side JavaScript is the most common form of the language. The script should be included in or referenced by an HTML document for the code to be interpreted by the browser.
           <p>It means that a web page need not be a static HTML, but can include programs that interact with the user, control the browser, and dynamically create HTML content.</p>
@@ -52,7 +52,7 @@
           <p>The JavaScript code is executed when the user submits the form, and only if all the entries are valid, they would be submitted to the Web Server.</p>
           <p>JavaScript can be used to trap user-initiated events such as button clicks, link navigation, and other actions that the user initiates explicitly or implicitly.</p>
           
-          <h2 class="d-flex justify-content-start mt-5">Advantages of JavaScript</h2>
+          <h2 class="d-flex justify-content-start mt-5" id="third">Advantages of JavaScript</h2>
           <hr>
           <p>The merits of using JavaScript are:</p>
           <dl>
@@ -69,7 +69,7 @@
             <dd>You can use JavaScript to include such items as drag-anddrop components and sliders to give a Rich Interface to your site visitors.</dd>
           </dl>
 
-        <h2 class="d-flex justify-content-start mt-5">Limitations of JavaScript</h2>
+        <h2 class="d-flex justify-content-start mt-5" id="fourth">Limitations of JavaScript</h2>
         <hr>
         <p>We cannot treat JavaScript as a full-fledged programming language. It lacks the following important features:</p>
         <ul>
@@ -79,7 +79,7 @@
         </ul>
         <p>Once again, JavaScript is a lightweight, interpreted programming language that allows you to build interactivity into otherwise static HTML pages.</p>
 
-        <h2 class="d-flex justify-content-start mt-5">JavaScript Development Tools</h2>
+        <h2 class="d-flex justify-content-start mt-5" id="fifth">JavaScript Development Tools</h2>
         <hr>
         <p>One of major strengths of JavaScript is that it does not require expensive development tools. You can start with a simple text editor such as Notepad. Since it is an interpreted language inside the context of a web browser, you don't even need to buy a compiler.</p>
         <p>To make our life simpler, various vendors have come up with very nice JavaScript editing tools. Some of them are listed here:</p>
@@ -89,14 +89,14 @@
           <li><em>Macromedia HomeSite 5</em>: HomeSite 5 is a well-liked HTML and JavaScript editor from Macromedia that can be used to manage personal websites effectively.</li>
         </ul>
 
-        <h2 class="d-flex justify-content-start mt-5">Where is JavaScript Today?</h2>
+        <h2 class="d-flex justify-content-start mt-5" id="sixth">Where is JavaScript Today?</h2>
         <hr>
         <p>The ECMAScript Edition 5 standard will be the first update to be released in over four years. JavaScript 2.0 conforms to Edition 5 of the ECMAScript standard, and the difference between the two is extremely minor.</p>
         <p>The specification for JavaScript 2.0 can be found on the following site: <a href="http://www.ecmascript.org">http://www.ecmascript.org</a></p> 
         <!-- The hyperlink above doesn't work, but that's because the link provided seems to be incorrect -->
         <p>Today, Netscape's JavaScript and Microsoft's JScript conform to the ECMAScript standard, although both the languages still support the features that are not a part of the standard.</p>
 
-        <h2 class="d-flex justify-content-start mt-5">HTML and JavaScript</h2>
+        <h2 class="d-flex justify-content-start mt-5" id="seventh">HTML and JavaScript</h2>
         <hr>
         <p>In the context of this book, the most important HTML tag is <code>&lt;script&gt;</code>. This tag allows us to include a piece of JavaScript in a document.</p>
 <pre>
@@ -111,7 +111,7 @@
 </pre>
         <p>The <em>code/hello.js</em> file included here contains the same program—<code>alert("hello!")</code>. When an HTML page references other URLs as part of itself—for example, an image file or a script—web browsers will retrieve them immediately and include them in the page.</p>
 
-        <h2 class="d-flex justify-content-start mt-5">Short Video Tutorial</h2>
+        <h2 class="d-flex justify-content-start mt-5" id="eight">Short Video Tutorial</h2>
         <hr>
         <p>Before you start working with JavaScript, it's worth watching an online tutorial about it. The tutorial was published on <a href="https://www.youtube.com/watch?v=W6NZfCO5SIk">YouTube</a>.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/W6NZfCO5SIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,9 +122,21 @@
         </div>
 
 
-        <div class="col-4">
-          col 2
-          <!-- https://getbootstrap.com/docs/5.2/components/navbar/#nav -->
+        <div class="col-4 mt-5">
+          <ul class="nav nav-pills nav-fill ">
+            <li class="nav-item text-start">
+              <a class="nav-link text-dark ps-0 fs-5 fw-semibold pt-0" href="#">In this chapter</a>
+              <a class="nav-link active bg-danger text-light" aria-current="page" href="#first">What is JavaScript?</a>
+              <a class="nav-link text-dark fw-light p-2" href="#second">Client-Side JavaScript</a>
+              <a class="nav-link text-dark fw-light p-2" href="#third">Advantages of JavaScript</a>
+              <a class="nav-link text-dark fw-light p-2" href="#fourth">Limitations of JavaScript</a>
+              <a class="nav-link text-dark fw-light p-2" href="#fifth">JavaScript Development Tools</a>
+              <a class="nav-link text-dark fw-light p-2" href="#sixth">Where is JavaScript Today?</a>
+              <a class="nav-link text-dark fw-light p-2" href="#seventh">HTML and JavaScript</a>
+              <a class="nav-link text-dark fw-light p-2" href="#eight">Short Video Tutorial</a>
+            </li>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" class="img-thumbnail border-0">
         </div>
       </div>
       
